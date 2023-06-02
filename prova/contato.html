@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Café do Bairro - Contato</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+
+    <style>
+        nav ul li a {
+            background-color: white;
+        }
+        
+        body {
+            background-color: #D2B48C;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        
+        header {
+            background-color: #8B4513;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        h1 {
+            font-size: 32px;
+            margin: 0;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        nav li {
+            margin: 0 10px;
+        }
+        
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+        
+        h2 {
+            font-size: 24px;
+        }
+        
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        
+        footer {
+            background-color: #8B4513;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Café do Bairro</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Página Inicial</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Informações de Contato</h2>
+        <p>Endereço: Rua Exemplo, 123, Bairro, Cidade</p>
+        <p>Telefone: (12) 3456-7890</p>
+        <p>Horário de Funcionamento: Seg-Sex: 8h-18h, Sáb-Dom: 9h-16h</p>
+        <img src="Captura de tela 2023-06-01 201533.png" alt="Localização do Café do Bairro">
+    </section>
+
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Café do Bairro - Contato</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <style>
+            /* Estilos... */
+        </style>
+    </head>
+
+    <body>
+
+        <section>
+            <h2>Informações de Contato</h2>
+            <form id="contact-form">
+                <div>
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2023 Café do Bairro. Todos os direitos reservados.</p>
+        </footer>
+
+        <script>
+            document.getElementById("contact-form").addEventListener("submit", function(event) {
+                // Impede o envio do formulário
+                event.preventDefault();
+
+                // Validação dos campos
+                var name = document.getElementById("name").value.trim();
+                var email = document.getElementById("email").value.trim();
+                var message = document.getElementById("message").value.trim();
+
+                if (name === "" || email === "" || message === "") {
+                    alert("Por favor, preencha todos os campos.");
+                    return;
+                }
+
+                // Envio do formulário (simulação)
+                alert("Mensagem enviada com sucesso!");
+                document.getElementById("contact-form").reset();
+            });
+        </script>
+    </body>
+
+    </html>
